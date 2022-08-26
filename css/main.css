@@ -99,8 +99,10 @@ body {
   color: #e2e3ed;
 }
 
-ul, ol {
+ul, 
+ol {
   list-style-type: none;
+  margin: 0;
 }
 
 a {
@@ -112,9 +114,11 @@ h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
   font-weight: 500;
+  margin: 0;
 }
 
-h3, h4 {
+h3, 
+h4 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.125em;
   margin: 20px 0;
@@ -145,7 +149,8 @@ address {
 
 /*------Base Header - Footer Styles ---------*/
 
-header, footer {
+header, 
+footer {
   display:flex;
   justify-content: center;
   align-items: center;
@@ -158,11 +163,11 @@ header {
 }
 
 header .content-wrapper {
+  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: wrap;
-  margin: 0;
+  flex-flow: row wrap;
 }
 
 header figure {
@@ -181,20 +186,20 @@ header figure {
 }
 
 header nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-flow: row wrap;
   width: 60%;
   font-size: 1.125em;
   font-weight: 700;
   text-transform: uppercase;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap; 
 }
 
 header nav ul {
+  width: 100%;
   display: flex;
   justify-content: space-around;
-  width: 100%;
 }
 
 header nav ul li {
@@ -202,8 +207,8 @@ header nav ul li {
 }
 
 footer {
-  flex-direction: column;
   text-align: center;
+  flex-direction: column;
 }
 
 footer p {
@@ -226,9 +231,17 @@ footer .social-icons {
 }
 
 footer .social-icons p {
+  background-color: #527158;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+footer .social-icons p i {
+  font-size: 1.3125em;
 }
 
 footer .copyright {
@@ -236,13 +249,12 @@ footer .copyright {
 }
 
 
-
 /*---------------Mobile Styles - Homepage -----------------*/
 
 /* Hero Area */
 
 .hero-area {
-  background: url(../img/unplugged-retreat.jpg);
+  background: url(../img/jake-melara-30679-unsplash.jpg);
   background-size: cover;
   background-position: center;
   min-height: 500px;
@@ -261,11 +273,11 @@ footer .copyright {
 /* Aside */
 
 aside {
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  background-color: #527158;
 }
 
 aside .form {
@@ -297,7 +309,7 @@ input[type=button] {
 /* Features */
 
 .features {
-  background: url('../img/unplugged-retreat-features.jpg');
+  background: url('../img/sitting-down-omar-lopez-296944-unsplash.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -355,23 +367,11 @@ input[type=button] {
    ======================= */
 
 .mission {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
   background-color: #527158;
-}
-
-.contact-section {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  background-color: #2a423a;
-}
-
-.contact-content p {
-  margin: 0;
 }
 
 .map figure {
@@ -389,6 +389,19 @@ input[type=button] {
   top: 0; 
   left: 0; 
 }
+
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  background-color: #2a423a;
+}
+
+.contact-content p {
+  margin: 0;
+}
+
 
 /* =======================
     FAQ Page
@@ -431,7 +444,7 @@ input[type=button] {
 /*Genderal styles*/
 
   .content-wrapper {
-    max-width: 649px;
+    max-width: 640px;
     margin: 100px 0;
   }
 
@@ -448,8 +461,8 @@ input[type=button] {
   /*Header*/
 
   header {
-    padding: 33px 0;
-   justify-content: space-around; 
+  padding: 33px 0;
+  justify-content: space-around; 
   }
 
   header .content-wrapper {
@@ -485,7 +498,6 @@ input[type=button] {
     margin: 0;
   }
 
-
   /*Aside*/
   aside .content-wrapper {
     margin: 50px 0;
@@ -518,6 +530,10 @@ input[type=button] {
     width: 62%;
   }
 
+  .features i {
+    margin-bottom: 30px;
+  }
+
   /*reviews*/
 
   .reviews article {
@@ -531,7 +547,7 @@ input[type=button] {
 
   .reviews article figure,
   .reviews article div {
-    width: 50%;
+    width: 49%;
   }
 
   .reviews h3 {
@@ -541,7 +557,7 @@ input[type=button] {
 
   /*footer*/
   footer .content-wrapper {
-    width: 60%;
+    width: 65%;
     margin: 100px 0; 
   }
 
@@ -565,6 +581,11 @@ input[type=button] {
     line-height: 1.285;
   }
 
+  footer .social-icons {
+    width: 12.5em;
+    justify-content: space-between;
+  }
+
   footer .copyright {
     width: 100%;
     
@@ -575,7 +596,7 @@ input[type=button] {
     About Page
    ======================= */
 
-   .mission-content {
+  .mission-content {
      display: flex;
      justify-content: space-between;
      align-items: center;
@@ -584,6 +605,10 @@ input[type=button] {
 
   .mission-content p {
     width: 45%;
+  }
+
+  .map figure {
+    padding-bottom: 45.5%;
   }
 
   .contact-section .content-wrapper h2 {
@@ -600,14 +625,10 @@ input[type=button] {
     font-size: 1.5em;
   }
 
-  .map figure {
-    padding-bottom: 45.5%;
-  }
-   
-
 /* =======================
     FAQ Page
    ======================= */
+
   .faq .content-wrapper {
     justify-content: space-between;
   }
@@ -645,7 +666,8 @@ input[type=button] {
     font-size: 2.25em;
   }
 
-  h3, h4 {
+  h3, 
+  h4 {
     font-size: 1.875em;
   }
 
@@ -661,9 +683,9 @@ input[type=button] {
     font-size: 3.75em;
   }
 
-  /*aside*/
+  /*Aside*/
   aside .content-wrapper {
-    justify-content: space-around ;
+    justify-content: space-around;
   }
 
   aside .content-wrapper .form-description,
@@ -671,11 +693,11 @@ input[type=button] {
     width:30%;
   }
 
-  form-description p {
+  .form-description p {
     font-size: 1.125em;
   }
 
-  /*features*/
+  /*Features*/
   .features h2 {
     width: 90%;
   }
@@ -684,7 +706,7 @@ input[type=button] {
     flex-basis: 33%;
   }
 
-  /*reviews*/
+  /*Reviews*/
 
   .reviews h2 {
     padding-bottom: 50px;
@@ -699,8 +721,12 @@ input[type=button] {
   }
 
 /* =======================
-    about Page
-   ======================= */
+  About Page
+======================= */
+
+  .map figure {
+    padding-bottom: 37.5%;
+  }
 
   .mission h2,
   .contact-section .content-wrapper h2 {
@@ -712,13 +738,9 @@ input[type=button] {
     font-size: 1.875em;
   }
 
-  .map figure {
-    padding-bottom: 37.5%;
-  }
-
   /* =======================
     FAQ Page
-   ======================= */
+  ======================= */
    .faq h2 {
      width: 100%;
      font-size: 3em;
