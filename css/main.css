@@ -321,6 +321,7 @@ input[type=button] {
 .features-wrapper {
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
 }
 
 .features h2 {
